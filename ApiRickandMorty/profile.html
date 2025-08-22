@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Perfil de Usuario</h1>
+    <button onclick="logout()">Cerrar sesión</button>
+  </header>
+  <main class="profile-container">
+    <form id="profileForm">
+      <label>Nombre de usuario</label>
+      <input type="text" id="profileUsername" disabled />
+      <label>Email</label>
+      <input type="email" id="profileEmail" />
+      <button type="submit">Actualizar Perfil</button>
+      <p class="success" id="profileSuccess"></p>
+    </form>
+  </main>
+  <script src="./profile.js"></script>
+  <script src="./auth.js"></script>
+</body>
+</html>
